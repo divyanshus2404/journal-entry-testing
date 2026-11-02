@@ -48,16 +48,16 @@ Risk level: **High** (score 4+), **Medium** (2–3), **Low** (1).
 
 | Step | Count |
 |---|---|
-| Lines in raw extract | 12,898 |
+| Lines in raw extract | 12,896 |
 | Exact duplicate lines removed | 40 |
 | Journal entries quarantined (unbalanced or invalid account) | 5 |
-| Clean journal entries tested | 5,031 |
-| Entries flagged | 66 (1.3%) |
+| Clean journal entries tested | about 5,000 |
+| Entries flagged | 66 (about 1.3%) |
 | High / Medium / Low risk | 3 / 39 / 24 |
 
 - **Every planted issue was caught**: 100% recall across all nine tests and both data quality checks.
 - **No normal entry was flagged.** Every extra flag was a planted entry that genuinely matched a second test too (for example, a duplicate invoice that also fell on a weekend).
-- **Benford's law**: first digits of 12,848 line amounts match the expected distribution within 0.5 percentage points.
+- **Benford's law**: first digits of 12,846 line amounts match the expected distribution within 0.5 percentage points.
 
 Because the data is synthetic, these numbers show the tests work as designed. Real ledgers produce more
 false positives, which an auditor would review and document.
